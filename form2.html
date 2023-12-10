@@ -6,17 +6,52 @@
     <title>Document</title>
     <link rel ="stylesheet" href="form2.css">
 </head>
-<body>
-    <form class="form2">
+<body style="background-color: rgb(210, 174, 128); ">
+   
         <div class ="div2">
-      <label> Contact NO. <input type ="text" value ="Enter your name"></label>
-      <label> Education  <input type ="text" value ="Enter your name"></label>
-      <label> Name  <input type ="text" value ="Enter your name"></label>
+      <label> Contact NO. <input  id ='c' type ="number" placeholder ="Enter your contact"></label>
+      <label> Education  <input  id ='ed' type ="text" placeholder ="Enter your education level"></label>
+      <label>  Qualfication <input  id ='q' type ="text" placeholder ="Enter your qualifications"></label>
    <span class="next-prev">
-    <a href="index.html">Previous</a>
-    <a href="form3.html">Next</a>
+    <button><a href="index.html">Previous</a></button>
+    <button onclick="validform2()">Next</button>
 </span>
     </div>
-    </form>
+   
+    <script>
+        function validform2()
+      
+       { 
+        var message=[];
+        var contact= document.getElementById('c').value;
+        var qualification= document.getElementById('q').value;
+        var education= document.getElementById('ed').value;
+        
+        if (contact=="" || contact.length> 10)
+        {
+            alert("Enter Valid number");
+            message.push("eror2")
+        }
+         if (education=="")
+        {
+            alert("Enter your education")
+            message.push("eror2")
+        }
+         if(qualification=="")
+        {
+            alert("Enter your qualification")
+            message.push("eror2")
+        }
+        
+        if(message.length=== 0)
+        {
+            window.location.href="form3.html"
+    
+
+        }
+        
+}
+    
+    </script>
 </body>
 </html>
