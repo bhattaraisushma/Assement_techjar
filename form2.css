@@ -1,3 +1,18 @@
+body{
+    height: 100%;
+    background-color: beige;
+    background-image:url('Feathers.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    
+}
+.maindiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+}
 .form2{
     height: 30rem;
     width: 40rem;
@@ -17,6 +32,15 @@ justify-items: center;
 align-items: center;
 gap:3rem;
 
+color:rgb(212, 73, 14);
+font-size: 1.5rem;
+font-family: Arial, Helvetica, sans-serif;
+
+width: 30%;
+height: 20rem;
+border-style: solid;
+border-width: 3px;
+border-color: black;
 }
 .next-prev{
     display: flex;
