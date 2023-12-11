@@ -48,3 +48,17 @@ border-color: black;
     gap:4rem;
     
 }
+input{
+    height: 2rem;
+    width: 14rem;
+border-radius: 8rem;
+}
+button{
+    height: 2rem;
+    width:10rem;
+    border-radius: 8rem;
+    background-color: bisque;
+}
+label{
+    font-weight: bold;
+}
